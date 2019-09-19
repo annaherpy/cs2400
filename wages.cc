@@ -1,8 +1,8 @@
 /*
  *        File: wages.cc
- *      Author: Nasseef Abukamail
- *        Date: September 11, 2019
- * Description: Add Description
+ *      Author: Anna Herpy
+ *        Date: September 19, 2019
+ * Description: Extra Credit
  */
 
 #include <iostream>
@@ -22,6 +22,27 @@ int main(int argc, char const *argv[]) {
     cin >> rate;
     cout << "Enter the number of hours: ";
     cin >> hours;
+
+if (rate >=8 && rate <=20){
+
+    cout << setw(29) <<"Rate: Valid" << endl;
+    
+} else {
+     
+     cout << setw(29) <<"Rate: Invalid" << endl;
+     exit(0);
+}
+
+if (hours >=0 && rate <=60){
+
+    cout << setw(29) <<"Hours: Valid" << endl;
+    
+} else {
+     
+     cout << setw(29) <<"Hours: Invalid" << endl;
+     exit(0);
+}
+
 
     ///#3 Calculate wages (overtime?)
     if (hours > 40)
